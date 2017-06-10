@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="barcode.com.practice.MainActivity">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <EditText
+
+        android:id="@+id/ename"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_below="@+id/img"
+        android:layout_marginTop="30dp"
+        android:background="#ef2ae2bc"
+        android:hint="Username"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/epswd"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_below="@+id/ename"
+        android:layout_marginTop="30dp"
+        android:background="#ef2ae2bc"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/lgbtn"
+        android:layout_below="@+id/epswd"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ef2a58e2"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>
